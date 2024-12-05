@@ -1,0 +1,445 @@
+/*--------------*\
+| style
+\*--------------*/
+
+/*------------------*\
+| Copyright 2024 - CJ
+\*------------------*/
+
+
+/*-------------------------*\
+| Propriedades customizadas
+\*-------------------------*/
+
+:root {
+   /*Color*/
+   --verdeA: #2EA9A2;
+   --azul: #0095FF;
+   --sim: #005471;
+   --azuldark: #336181;
+   --azulmaisdark: #003D68;
+   --verdedark: #0D3B38;
+   --black: #1E1E1E;
+   --branco: #FFFFFF;
+   
+
+
+
+   /*Tipografia*/
+   --ff-aclonica: font-family: "Aclonica", system-ui;
+
+
+   /*4x16px */
+
+   --fs-40: 4rem;
+   --fs-30: 3rem;
+   --fs-24: 2.4rem;
+   --fs-18: 1.8rem;
+   --fs-14: 1rem;
+   --fs-12: 1.3rem;
+   --fw-300: 300;
+   --fw-500: 500;
+   --fw-600: 600;
+   --fw-700: 700;
+
+   /*Espaço*/
+   --section-padding: 80px;
+
+   /*Borda*/
+   --radius-5: 5px;
+   --radius-8: 8px;
+
+   /*Sombra*/
+   --shadow-1: 10px 0 60px hsla(0, 0%, 13%, 0.342);
+   --shadow-2: 10px 0 60px hsla(0, 0%, 15%, 0.603);
+
+   /*Transição*/
+   --transition-1: 0.25s ease;
+   --transition-2: 0.50s ease;
+   --cubic-out: cubic-bezier(0.33, 0.85, 0.4, 0.96);
+
+}
+
+
+ * {
+    margin: 0;
+    padding: 0;
+ }
+ 
+ a {
+    text-decoration: none;
+ }
+ 
+ h1 {
+    font-size: var(--fs-40);
+ }
+ 
+ p {
+    font-size: var(--fs-14)
+ }
+ 
+ .container{
+    margin: 0px;
+    padding: 0px;
+ }
+ 
+ ion-icon {
+    font-size: 44px;
+    gap: 100px;
+ }
+ 
+ ion-icon :hover {
+    display: flex;
+    align-items: center;
+ }
+ 
+ .link {
+    text-decoration: none;
+    color: var(--black)
+ }
+ 
+ .link :hover {
+    color: #003D68;
+    transition: var(--transition-1);
+ }
+ 
+ ul {
+    list-style: none;
+ }
+
+
+header {
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: var(--branco);
+ }
+ 
+
+ .banner,
+.banner-2 {
+   height: auto;
+   margin-top: 80px;
+   width: 100%;
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-color: blue;
+   height: 300px;
+   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(../img/banner.png);
+   background-attachment: fixed;
+   padding: 150px 0px 0px 0px;
+ }
+ 
+ .logo img {
+    width: 90px;
+    height: 90px;
+ }
+ 
+ .nav-list {
+    font-family: " Poppins ", system-ui;
+    list-style: none;
+    display: flex;
+    gap: 100px;
+    font-size: 20px;
+ }
+ 
+ .nav-item :hover{
+    color: var(--azulmaisdark);
+    transition: 0.5s;
+    font-family: " Poppins", sans-serif;
+    border-bottom: 1px var(--azuldark);
+ }
+ 
+ 
+ .nav-link {
+    color: var(--azul);
+ }
+
+ .icons {
+   color: var(--azul);
+}
+
+.icons :hover{
+   color: var(--azulmaisdark);
+}
+
+/*-----------------*\
+   SOBRE NOS
+\*-----------------*/
+
+.sobre-nos {
+   height: 900px;
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+   background-color: var(--branco);
+}
+
+.sobre-titulo {
+   text-align: center;   
+   text-transform: uppercase;
+   font-family:"Aclonica", sans-serif; 
+   color: white;
+   text-align: center;
+}
+
+.conteudo-sobre {
+   display: flex;
+   justify-content: space-evenly;
+}
+
+
+.sub-titulo {
+   font-family: "Aclonica", sans-serif;
+   color: #0095FF;
+   text-align: left;
+}
+
+.sobre-titulo {
+  color: white;
+  font-family: "Aclonica", sans-serif;
+  transform: translateY(-70px);
+   font-size: 90px;
+}
+
+.sobre-texto {
+   max-width: 1000px;
+   align-items: center;
+   box-shadow: -10px 10px 10px 8px #888888;
+   padding: 40px;
+   display: flex;
+   flex-direction: column;
+   align-items:center;
+   justify-content: center;
+   text-align: left;
+   margin-top: 90px;
+}
+
+.sobre-texto-conteudo {
+   text-align: left;
+   color: black;
+   font-family: "Poppins", sans-serif;;
+}
+.titu-nos {
+   font-family: "Poppins", sans-serif;
+   padding-top: 60px;
+   font-size: 75px;
+   color: #0095FF;
+   align-items: c;
+  }
+  
+  .titu-nos .nos {
+     color: #2EA9A2;
+  }
+  
+  .img-nos {
+    margin-top: 250px;
+     margin-right: 00px;
+  }
+  
+   .img-equip {
+      border-radius: 200px;
+      height: 150px;
+      width: 150px;
+   } 
+
+  .p-nos {
+     height: auto;
+     width: 1000px;
+     padding: 30px;
+     font-family: "Poppins", sans-serif;
+     color: #0095FF;
+     margin-top: 55px;
+     margin-right: 450px;
+     background-color: var(--branco); 
+     box-shadow: -15px 3px 15px 20px #888888;
+  }
+  
+
+/*-----------------*\
+   NOSSA EQUIPE
+\*-----------------*/
+
+.nossa-equipe {
+   height: 800px;
+   width: 100%;
+   margin-top: 350px;
+   background-color: var(--branco);
+}
+
+.titulo-equipe {
+   font-family:"Aclonica", sans-serif ;
+   color: #0095FF;
+   text-transform: uppercase;
+   text-align: center;
+   position: relative;
+   bottom: -450px;
+
+}
+
+.equipe-titulo {
+   color: var(--verdeA);
+}
+
+.equipe-list {
+   display: flex;
+   justify-content: space-evenly;
+   margin-top: 570px;
+}
+
+.equipe-text {
+   font-family: "Aclonica", sans-serif;
+   font-size: 30px;
+   color: var(--azulmaisdark);
+   font-weight: var(--fw-500);
+}
+
+  /*-----------------*\
+     SOBRE E EQUIPE
+  \*-----------------*/
+  .sobre-equipe {
+     height: 1500px;
+     width: 100%;
+  }
+  
+ 
+  /*-----------------*\
+    NOSSAS UNIDADES 
+ \*-----------------*/
+   /* .imagem-nossa { 
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/banner2.png);
+    height: 400px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    margin-bottom: 0;
+ }
+ 
+ .nossas-unidades {
+    height: 1100px;
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/banner2.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    align-items: center;
+ }
+ 
+ .unidades-conteudo {
+    background-color: #003D68;
+    height: 700px;
+    width: 100%;
+ 
+ }
+ 
+ .titulo-unidades {
+    text-align: center;
+    font-family:"Aclonica",sans-serif; 
+    color: var(--branco);
+ }
+ 
+ 
+ 
+ .unidades-list {
+    margin-top: 150px;
+    display: flex;
+    justify-content: space-evenly;
+    color: var(--branco);
+ 
+ }
+ 
+ .unidades-p {
+    color: var(--branco);
+    text-align: center;
+    font-size: 30px;
+ }  */
+
+
+
+  
+  
+  
+  
+
+ footer {
+   text-align: center;
+   display: flex;
+   align-items: center;
+   justify-content: space-evenly ;
+   font-family: "Aclonica",sans-serif; 
+   background-color: #003D68;
+   color: var(--branco);
+}
+
+.copyright-footer,
+.redes-footer,
+.contato-footer {
+   width: 486px;
+   height: 323px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+}
+
+.copyright-footer {
+   width: auto;
+}
+
+.logo-footer {
+   width: 300px;
+}
+
+.titulo-footer {
+   color: white;
+   text-align: center;
+   font-size: var(--fs-30);
+   text-transform: uppercase;
+}
+
+.icons-footer {
+   margin-top: 30px;
+   display: flex;
+   gap: 21px;
+}
+
+.icons-footer :hover {
+   transition: var(--transition-1);
+} 
+
+.icons {
+   color: white;
+}
+
+.face-icons :hover {
+   transition: var(--transition-1);
+   color: #0095FF;
+}
+
+.whats-icons :hover {
+   transition: var(--transition-1);
+   color: green;
+}
+
+.insta-icons :hover {
+   transition: var(--transition-1);
+   color: pink;
+}
+
+
+.contato-list {
+   display: flex;
+   flex-direction: column;
+   margin-top: 10px;
+   gap: 16px;
+}
+ 
+
+

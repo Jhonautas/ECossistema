@@ -1,0 +1,760 @@
+/*--------------*\
+| style
+\*--------------*/
+
+/*------------------*\
+| Copyright 2024 - CJ
+\*------------------*/
+
+
+/*-------------------------*\
+| Propriedades customizadas
+\*-------------------------*/
+
+
+:root {
+   /*Color*/
+   --verdeA: #2EA9A2;
+   --azul: #0095FF;
+   --sim: #005471;
+   --azuldark: #336181;
+   --azulmaisdark: #003D68;
+   --verdedark: #0D3B38;
+   --black: #1E1E1E;
+   --branco: #FFFFFF;
+   
+
+
+
+   /*Tipografia*/
+   --ff-aclonica: font-family: "Aclonica", system-ui;
+
+
+   /*4x16px */
+
+   --fs-40: 4rem;
+   --fs-30: 3rem;
+   --fs-24: 2.4rem;
+   --fs-18: 1.8rem;
+   --fs-14: 1rem;
+   --fs-12: 1.3rem;
+   --fw-300: 300;
+   --fw-500: 500;
+   --fw-600: 600;
+   --fw-700: 700;
+
+   /*Espaço*/
+   --section-padding: 80px;
+
+   /*Borda*/
+   --radius-5: 5px;
+   --radius-8: 8px;
+
+   /*Sombra*/
+   --shadow-1: 10px 0 60px hsla(0, 0%, 13%, 0.342);
+   --shadow-2: 10px 0 60px hsla(0, 0%, 15%, 0.603);
+
+   /*Transição*/
+   --transition-1: 0.25s ease;
+   --transition-2: 0.50s ease;
+   --cubic-out: cubic-bezier(0.33, 0.85, 0.4, 0.96);
+
+}
+
+
+
+* {
+   margin: 0;
+   padding: 0;
+}
+
+a {
+   font-weight: 80px;
+   text-decoration: none;
+}
+
+h1 {
+   font-size: var(--fs-40);
+}
+
+p {
+   font-size: var(--fs-14)
+}
+
+.container{
+   margin: 0px;
+   padding: 0px;
+}
+
+ion-icon {
+   font-size: 44px;
+   gap: 100px;
+}
+
+ion-icon :hover {
+   display: flex;
+   align-items: center;
+}
+
+.link {
+   text-decoration: none;
+   color: var(--black)
+}
+
+.link :hover {
+   color: #003D68;
+   transition: var(--transition-1);
+}
+
+ul {
+   list-style: none;
+}
+
+/* NAVBAR */
+
+header {
+   position: fixed; /* Set the navbar to fixed position */
+   top: 0; /* Position the navbar at the top of the page */
+   width: 100%; /* Full width */
+   height: 80px;
+   display: flex;
+   align-items: center;
+   justify-content: space-evenly;
+   background-color: white;
+}
+
+
+.logo img {
+   width: 90px;
+   height: 90px;
+
+}
+
+
+.nav-list {
+   font-family: " Poppins ", system-ui;
+   list-style: none;
+   display: flex;
+   gap: 100px;
+   font-size: 20px;
+}
+
+.nav-item :hover{
+   color: var(--azulmaisdark);
+   transition: 0.5s;
+   font-family: " Poppins", sans-serif;
+   border-bottom: 1px var(--azuldark);
+}
+
+
+.nav-link {
+   color: var(--azul);
+}
+
+/* .nav-item :hover {
+   color: var(--azulmaisdark);
+   font-family: " Poppins ", sans-serif;
+   transition: var(--transition-1);
+} */
+
+
+/* BANNER */
+
+.banner {
+   width: 100%;
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(../img/banner.png);
+   background-attachment: fixed;
+   margin-top: 80px;
+   padding: 150px 0px;
+   /* todos */
+   /* cima, lado direito, abaixo, lado esquerdo */
+   /* cima/baixo, lados */
+}
+
+.titulo {
+   background-repeat: no-repeat;
+   background-size: cover;
+   font-family: "Aclonica", system-ui;
+   font-size: 120px;
+   color: white;
+}
+
+
+.box-p {
+   font-family: "Poppins", sans-serif;
+   color: white;
+   background-color: #1a747047;
+   max-width: 600px;
+   width: auto;
+   margin-top: 30px;
+   font-size: 30px;
+   border-radius: 16px;
+}
+
+/* BLOCOS  */
+.quadrados-list {
+   display:flex;
+   flex-direction: row;
+   justify-content: center;
+}
+
+.quadrados-item {
+   display: flex;
+   flex-direction: column;
+}
+
+.box {
+   text-align: center;
+   text-wrap: wrap;
+   font-family: "Poppins", sans-serif;
+   font-size: var(--fs-14);
+   font-weight: var(--fw-500);
+   color: var(--branco);
+   padding: 10px 5px;
+}
+
+.h2 {
+   text-align: center;
+   text-transform: uppercase;
+}
+
+.denuncias {
+   background-color: var(--verdeA);
+}
+
+.pesquisa {
+   background-color:var(--azulmaisdark);
+}
+
+.ed-ambi {
+   background-color:var(--azul) ;
+}
+
+
+
+/* NOTICIAS */
+
+.blocos-noticia {
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   justify-content: space-evenly;
+   margin-top: 20px;
+}
+
+.titu-noti {
+   margin-top: 100px;
+   text-align: center;
+   font-family: "Aclonica", system-ui;
+   color: var(--azul);
+   font-size: 75px;
+}
+
+.reta-info
+{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 650px;
+ }
+
+ ul {
+   font-family: "Poppins", sans-serif;
+ }
+
+ .p-info {
+   width: 300px;
+}
+
+.imagem-noticia {
+   width: 300px;
+   height: 300px;
+ }
+ 
+ .btn-info {
+   font-family: "Poppins", sans-serif;
+   background-color: var(--azulmaisdark);
+   margin-bottom: 10px;
+   height: 30px;
+   width: 100px;
+   color: white;
+   border-radius:25px;
+   
+}
+
+.noticias-link {
+   margin-bottom: 0px;
+   color: white;
+}
+
+/*CONCIENTIZAÇÃO*/
+
+.concientização {
+   color: var(--branco);
+   height: 1000px;
+   width: 100%;
+   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/sos.lixo.png);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-attachment: fixed;
+}
+
+ .conc-titulo {
+   font-family: "Aclonica", system-ui;
+   font-size: 75px;
+   text-align: center;
+   padding-top: 114px;
+}
+
+.conc-item {
+   width: 429px;
+   height: 100px;
+}
+
+.con-img {
+   align-items: center;
+   justify-content: center;
+}
+
+
+.con-img-1 {
+   width: 100px;
+   height: 100px;
+   margin-top: 150px;
+   margin-left: 100px;
+}
+
+ .con-img-2 {
+   width: 100px;
+   height: 100px;
+   margin-top: 120px;
+  
+ }
+
+
+.con-conteudo {
+   justify-content: space-evenly;
+   display: flex;
+}
+
+ .conc-text {
+   font-family: "Poppins", system-ui;
+   margin-top: 150px;
+   font-size: 52px;
+   text-align: center;
+   color: white;
+   border-radius: 30px;
+   background-color: #4d9db841;
+   background-repeat: no-repeat;
+   background-size: cover;
+   
+ }
+.btn-conc-area {
+   margin-top: 60px;
+   margin-left: 450px;
+}
+ .btn-conc {
+   height: 80px;
+   width: 300px;
+   border-radius: 100px;
+   background-color: var(--azulmaisdark);
+   color: white;
+   font-size: 30px;
+   font-family: "Poppins", sans-serif;
+   font-weight: var(--fw-700);
+   cursor: pointer;
+ }
+
+ .btn-c {
+   color: white;
+ }
+
+/*SOBRE NÓS*/
+
+.sobre-nos {
+ background-color: var(--branco);
+ height: 1000px;
+ width: 100%;
+ justify-content: center;
+ display: flex;
+}
+
+
+.titu-nos {
+  font-family: "Poppins", sans-serif;
+   font-size: 75px;
+   color: #0095FF;
+   align-items: c;
+}
+
+.titu-nos .nos {
+
+   color: #2EA9A2;
+}
+
+.img-nos {
+  margin-top: 250px;
+   margin-right: 00px;
+}
+
+.p-nos {
+   height: auto;
+   width: 1000px;
+   padding: 30px;
+   font-family: "Poppins", sans-serif;
+   color: #0095FF;
+   margin-top: 55px;
+   margin-right: 450px;
+   background-color: var(--branco); 
+   box-shadow: -15px 3px 15px 20px #888888;
+}
+
+
+
+/*-----------------*\
+   SOBRE E EQUIPE
+\*-----------------*/
+.sobre-equipe {
+   height: 1500px;
+   width: 100%;
+   /* background-image: url(../img/sobre-equipe.png); */
+}
+
+
+/*-----------------*\
+   SOBRE NOS
+\*-----------------*/
+.sobre-nos {
+   height: 700px;
+   width: 100%;
+   padding-top: 70px;
+   justify-content: space-around;
+
+}
+
+.sobre-titulo-imagem {
+   text-align: center;
+   justify-content: center;
+   
+}
+
+.sobre-titulo {
+   text-transform: uppercase;
+   font-family:"Aclonica", sans-serif; 
+   color: #0095FF;
+}
+
+.sub-titulo {
+   font-family: "Aclonica", sans-serif;
+   color: #0095FF;
+}
+
+.sobre-titulo-nos {
+   color: #2EA9A2;
+   font-family: "Aclonica", sans-serif;;
+}
+
+.sobre-texto {
+   max-width: 900px;
+   max-height: 600px;
+   box-shadow: -10px 10px 10px 8px #888888;
+   padding: 40px;
+   
+}
+
+.sobre-texto-conteudo {
+   text-align: left;
+   color: #0095FF;
+   font-family: "Poppins", sans-serif;;
+}
+
+/*-----------------*\
+   NOSSA EQUIPE
+\*-----------------*/
+
+.nossa-equipe {
+   height: 0px;
+   width: 100%;
+   background-color: var(--branco);
+}
+
+.titulo-equipe {
+   font-family:"Aclonica", sans-serif ;
+   color: #0095FF;
+   text-transform: uppercase;
+   text-align: center;
+   margin-top: 90px;
+}
+
+.equipe-titulo {
+   color: var(--verdeA);
+}
+
+.equipe-list {
+   display: flex;
+   justify-content: space-evenly;
+   margin-top: 60px;
+}
+
+.equipe-text {
+   font-family: "Aclonica", sans-serif;
+   font-size: 30px;
+   color: var(--azulmaisdark);
+   font-weight: var(--fw-500);
+}
+
+/*-----------------*\
+   NOSSAS UNIDADES 
+\*-----------------*/
+/* .imagem-nossa {
+   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/banner2.png);
+   height: 400px;
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-attachment: fixed;
+   margin-bottom: 0;
+}
+
+.nossas-unidades {
+   height: 1100px;
+   width: 100%;
+   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/banner2.png);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-attachment: fixed;
+   align-items: center;
+}
+
+.unidades-conteudo {
+   background-color: #003D68;
+   height: 700px;
+   width: 100%;
+
+}
+
+.titulo-unidades {
+   text-align: center;
+   font-family:"Aclonica",sans-serif; 
+   color: var(--branco);
+}
+
+
+
+.unidades-list {
+   margin-top: 150px;
+   display: flex;
+   justify-content: space-evenly;
+   color: var(--branco);
+
+}
+
+.unidades-p {
+   color: var(--branco);
+   text-align: center;
+   font-size: 30px;
+} */
+
+
+
+
+
+
+footer {
+   text-align: center;
+   display: flex;
+   align-items: center;
+   justify-content: space-evenly ;
+   font-family: "Aclonica",sans-serif; 
+   background-color: #003D68;
+   color: var(--branco);
+}
+
+.copyright-footer,
+.redes-footer,
+.contato-footer {
+   height: 323px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+}
+
+.copyright-footer {
+   width: auto;
+}
+
+.logo-footer {
+   width: 300px;
+}
+
+.titulo-footer {
+   color: white;
+   text-align: center;
+   font-size: var(--fs-30);
+   text-transform: uppercase;
+}
+
+.icons-footer {
+   margin-top: 30px;
+   display: flex;
+   gap: 21px;
+}
+
+.icons-footer :hover {
+   transition: var(--transition-1);
+} 
+
+.icons {
+   color: white;
+   cursor: pointer;
+}
+
+.face-icons :hover {
+   transition: var(--transition-1);
+   color: #0095FF;
+}
+
+.whats-icons :hover {
+   transition: var(--transition-1);
+   color: green;
+}
+
+.insta-icons :hover {
+   transition: var(--transition-1);
+   color: pink;
+}
+
+
+.contato-list {
+   display: flex;
+   flex-direction: column;
+   margin-top: 10px;
+   gap: 16px;
+}
+
+
+main {
+   display: flex;
+   flex-direction: row;
+   padding: 40px 60px;
+   justify-content: center;
+   gap: 40px;
+}
+
+.principal {
+   height: 500px;
+   width: 500px;
+   border-radius: 21px;
+   background-color: var(--azul);
+}
+
+.secundario {
+   display: flex;
+   flex-wrap: wrap;
+   width: 500px;
+   height: 500px;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.bloco {
+   height: 230px;
+   width: 230px;
+   border-radius: 21px;
+   display: flex;
+   flex-direction: column;
+   background-color: var(--azulmaisdark);
+}
+
+.principal,
+.bloco {
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+
+.bloco-titulo-principal {
+   color: white;
+   font-size: 40px;
+}
+
+.bloco-titulo {
+   color: white;
+   font-size: 32px;
+}
+
+.bloco-titulo-principal,
+.bloco-titulo,
+.bloco-descricao {
+   text-align: left;
+}
+
+/*-------------------------*\
+|MEDIA QUERY
+\*-------------------------*/
+
+/*responsivo para telas maiores que 480px*/
+
+@media (max-width: 480px) {
+   :root {
+      --fs-40: 3rem;
+   }
+
+   .nav-list {
+      display: none;
+   }
+
+   .banner {
+      padding: 100px 0;
+   }
+
+   .titulo {
+      font-size:60px ;
+   }
+
+   .quadrados-list {
+      display: flex;
+      flex-direction: column;
+   }
+
+   .conc-titulo {
+      font-size: 40px;
+   }
+
+   .btn-conc-area {
+      margin: 0px;
+   }
+
+   .conc-img {
+      display: none;
+   }
+
+   .conc-text {
+      font-size: 40px;
+   }
+
+   .btn-conc {
+      margin-top: 40px;
+      margin-left: 90px;
+   }
+
+   .conc-p {
+      display: flex;
+      flex-direction: column;
+   }
+
+   footer {
+      display: flex;
+      flex-direction: column;
+   }
+
+  
+}
