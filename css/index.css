@@ -22,7 +22,7 @@
    --verdedark: #0D3B38;
    --black: #1E1E1E;
    --branco: #FFFFFF;
-   
+
 
 
 
@@ -81,7 +81,7 @@ p {
    font-size: var(--fs-14)
 }
 
-.container{
+.container {
    margin: 0px;
    padding: 0px;
 }
@@ -103,7 +103,6 @@ ion-icon :hover {
 
 .link :hover {
    color: #003D68;
-   transition: var(--transition-1);
 }
 
 ul {
@@ -113,9 +112,12 @@ ul {
 /* NAVBAR */
 
 header {
-   position: fixed; /* Set the navbar to fixed position */
-   top: 0; /* Position the navbar at the top of the page */
-   width: 100%; /* Full width */
+   position: fixed;
+   /* Set the navbar to fixed position */
+   top: 0;
+   /* Position the navbar at the top of the page */
+   width: 100%;
+   /* Full width */
    height: 80px;
    display: flex;
    align-items: center;
@@ -139,24 +141,31 @@ header {
    font-size: 20px;
 }
 
-.nav-item :hover{
+.nav-item:hover {
    color: var(--azulmaisdark);
-   transition: 0.5s;
    font-family: " Poppins", sans-serif;
    border-bottom: 1px var(--azuldark);
 }
 
+.nav-item1:hover {
+   transform: scale(1.1);
+}
+
+.nav-item2:hover {
+   transform: scale(1.1);
+}
+
+.nav-item3:hover {
+   transform: scale(1.1);
+}
+
+.nav-item4:hover {
+   transform: scale(1.1);
+}
 
 .nav-link {
    color: var(--azul);
 }
-
-/* .nav-item :hover {
-   color: var(--azulmaisdark);
-   font-family: " Poppins ", sans-serif;
-   transition: var(--transition-1);
-} */
-
 
 /* BANNER */
 
@@ -165,13 +174,10 @@ header {
    background-position: center;
    background-repeat: no-repeat;
    background-size: cover;
-   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(../img/banner.png);
+   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/banner.png);
    background-attachment: fixed;
    margin-top: 80px;
    padding: 150px 0px;
-   /* todos */
-   /* cima, lado direito, abaixo, lado esquerdo */
-   /* cima/baixo, lados */
 }
 
 .titulo {
@@ -196,7 +202,7 @@ header {
 
 /* BLOCOS  */
 .quadrados-list {
-   display:flex;
+   display: flex;
    flex-direction: row;
    justify-content: center;
 }
@@ -226,11 +232,11 @@ header {
 }
 
 .pesquisa {
-   background-color:var(--azulmaisdark);
+   background-color: var(--azulmaisdark);
 }
 
 .ed-ambi {
-   background-color:var(--azul) ;
+   background-color: var(--azul);
 }
 
 
@@ -253,38 +259,37 @@ header {
    font-size: 75px;
 }
 
-.reta-info
-{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  height: 650px;
- }
+.reta-info {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   text-align: center;
+   height: 650px;
+}
 
- ul {
+ul {
    font-family: "Poppins", sans-serif;
- }
+}
 
- .p-info {
+.p-info {
    width: 300px;
 }
 
 .imagem-noticia {
    width: 300px;
    height: 300px;
- }
- 
- .btn-info {
+}
+
+.btn-info {
    font-family: "Poppins", sans-serif;
    background-color: var(--azulmaisdark);
    margin-bottom: 10px;
    height: 30px;
    width: 100px;
    color: white;
-   border-radius:25px;
-   
+   border-radius: 25px;
+
 }
 
 .noticias-link {
@@ -305,7 +310,7 @@ header {
    background-attachment: fixed;
 }
 
- .conc-titulo {
+.conc-titulo {
    font-family: "Aclonica", system-ui;
    font-size: 75px;
    text-align: center;
@@ -330,12 +335,12 @@ header {
    margin-left: 100px;
 }
 
- .con-img-2 {
+.con-img-2 {
    width: 100px;
    height: 100px;
    margin-top: 120px;
-  
- }
+
+}
 
 
 .con-conteudo {
@@ -343,7 +348,7 @@ header {
    display: flex;
 }
 
- .conc-text {
+.conc-text {
    font-family: "Poppins", system-ui;
    margin-top: 150px;
    font-size: 52px;
@@ -353,13 +358,15 @@ header {
    background-color: #4d9db841;
    background-repeat: no-repeat;
    background-size: cover;
-   
- }
+
+}
+
 .btn-conc-area {
    margin-top: 60px;
    margin-left: 450px;
 }
- .btn-conc {
+
+.btn-conc {
    height: 80px;
    width: 300px;
    border-radius: 100px;
@@ -369,25 +376,25 @@ header {
    font-family: "Poppins", sans-serif;
    font-weight: var(--fw-700);
    cursor: pointer;
- }
+}
 
- .btn-c {
+.btn-c {
    color: white;
- }
+}
 
 /*SOBRE NÓS*/
 
 .sobre-nos {
- background-color: var(--branco);
- height: 1000px;
- width: 100%;
- justify-content: center;
- display: flex;
+   background-color: var(--branco);
+   height: 1000px;
+   width: 100%;
+   justify-content: center;
+   display: flex;
 }
 
 
 .titu-nos {
-  font-family: "Poppins", sans-serif;
+   font-family: "Poppins", sans-serif;
    font-size: 75px;
    color: #0095FF;
    align-items: c;
@@ -399,7 +406,7 @@ header {
 }
 
 .img-nos {
-  margin-top: 250px;
+   margin-top: 250px;
    margin-right: 00px;
 }
 
@@ -411,7 +418,7 @@ header {
    color: #0095FF;
    margin-top: 55px;
    margin-right: 450px;
-   background-color: var(--branco); 
+   background-color: var(--branco);
    box-shadow: -15px 3px 15px 20px #888888;
 }
 
@@ -423,7 +430,6 @@ header {
 .sobre-equipe {
    height: 1500px;
    width: 100%;
-   /* background-image: url(../img/sobre-equipe.png); */
 }
 
 
@@ -441,12 +447,12 @@ header {
 .sobre-titulo-imagem {
    text-align: center;
    justify-content: center;
-   
+
 }
 
 .sobre-titulo {
    text-transform: uppercase;
-   font-family:"Aclonica", sans-serif; 
+   font-family: "Aclonica", sans-serif;
    color: #0095FF;
 }
 
@@ -457,7 +463,8 @@ header {
 
 .sobre-titulo-nos {
    color: #2EA9A2;
-   font-family: "Aclonica", sans-serif;;
+   font-family: "Aclonica", sans-serif;
+   ;
 }
 
 .sobre-texto {
@@ -465,13 +472,14 @@ header {
    max-height: 600px;
    box-shadow: -10px 10px 10px 8px #888888;
    padding: 40px;
-   
+
 }
 
 .sobre-texto-conteudo {
    text-align: left;
    color: #0095FF;
-   font-family: "Poppins", sans-serif;;
+   font-family: "Poppins", sans-serif;
+   ;
 }
 
 /*-----------------*\
@@ -485,7 +493,7 @@ header {
 }
 
 .titulo-equipe {
-   font-family:"Aclonica", sans-serif ;
+   font-family: "Aclonica", sans-serif;
    color: #0095FF;
    text-transform: uppercase;
    text-align: center;
@@ -508,71 +516,15 @@ header {
    color: var(--azulmaisdark);
    font-weight: var(--fw-500);
 }
-
 /*-----------------*\
-   NOSSAS UNIDADES 
+   FOOTER
 \*-----------------*/
-/* .imagem-nossa {
-   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/banner2.png);
-   height: 400px;
-   background-position: center;
-   background-repeat: no-repeat;
-   background-size: cover;
-   background-attachment: fixed;
-   margin-bottom: 0;
-}
-
-.nossas-unidades {
-   height: 1100px;
-   width: 100%;
-   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/banner2.png);
-   background-position: center;
-   background-repeat: no-repeat;
-   background-size: cover;
-   background-attachment: fixed;
-   align-items: center;
-}
-
-.unidades-conteudo {
-   background-color: #003D68;
-   height: 700px;
-   width: 100%;
-
-}
-
-.titulo-unidades {
-   text-align: center;
-   font-family:"Aclonica",sans-serif; 
-   color: var(--branco);
-}
-
-
-
-.unidades-list {
-   margin-top: 150px;
-   display: flex;
-   justify-content: space-evenly;
-   color: var(--branco);
-
-}
-
-.unidades-p {
-   color: var(--branco);
-   text-align: center;
-   font-size: 30px;
-} */
-
-
-
-
-
-
 footer {
    text-align: center;
    display: flex;
    align-items: center;
-   justify-content: space-evenly ;
-   font-family: "Aclonica",sans-serif; 
+   justify-content: space-evenly;
+   font-family: "Aclonica", sans-serif;
    background-color: #003D68;
    color: var(--branco);
 }
@@ -610,7 +562,7 @@ footer {
 
 .icons-footer :hover {
    transition: var(--transition-1);
-} 
+}
 
 .icons {
    color: white;
@@ -717,7 +669,7 @@ main {
    }
 
    .titulo {
-      font-size:60px ;
+      font-size: 60px;
    }
 
    .quadrados-list {
@@ -756,5 +708,5 @@ main {
       flex-direction: column;
    }
 
-  
+
 }
